@@ -1,0 +1,27 @@
+/* lecture-quiz-maker specifics */
+.sel,input[type=number]{border:1px solid var(--border);border-radius:10px;padding:9px 12px;font:inherit;font-size:14px;background:var(--bg);color:var(--ink)}
+.sel:focus,input[type=number]:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-ring)}
+.size-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.size-grid input{width:100%}
+.quiz-list{display:grid;gap:14px}
+.q-card{padding:20px}
+.q-text{font-weight:600;font-size:15.5px;margin:0 0 14px;line-height:1.5}
+.q-num{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:24px;border-radius:8px;background:var(--accent);color:var(--accent-ink);font:700 12px var(--font-body);margin-right:10px}
+.opt-list{display:grid;gap:8px}
+.opt{text-align:left;border:1px solid var(--border);background:var(--bg);color:var(--ink);border-radius:10px;padding:11px 14px;font:inherit;font-size:14px;cursor:pointer;transition:border-color .15s,background .15s}
+.opt:hover:not(:disabled){border-color:var(--accent);background:var(--accent-soft)}
+.opt:disabled{cursor:default;opacity:.85}
+.opt-right{border-color:var(--ok);background:var(--ok-soft);color:var(--ok);font-weight:600}
+.opt-wrong{border-color:var(--bad);background:var(--bad-soft);color:var(--bad)}
+.q-fb{margin:12px 0 0;font-size:13.5px;line-height:1.55;padding:10px 12px;border-radius:10px}
+.fb-ok{background:var(--ok-soft);color:var(--ok)}
+.fb-bad{background:var(--bad-soft);color:var(--bad)}
+.q-fb .hint{display:block;margin-top:4px;color:var(--muted)}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.flash{perspective:900px;cursor:pointer;min-height:170px}
+.flash-in{position:relative;width:100%;height:100%;min-height:170px;transition:transform .45s;transform-style:preserve-3d}
+.flash.flipped .flash-in{transform:rotateY(180deg)}
+.flash-f,.flash-b{position:absolute;inset:0;backface-visibility:hidden;border:1px solid var(--border);border-radius:var(--r);background:var(--surface);box-shadow:var(--shadow);padding:18px;display:flex;flex-direction:column;justify-content:center;gap:8px}
+.flash-b{transform:rotateY(180deg);background:var(--accent-soft)}
+.flash p{margin:0;font-size:14px;line-height:1.5}
+@media(max-width:720px){.size-grid{grid-template-columns:1fr 1fr 1fr;gap:8px}}
