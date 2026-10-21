@@ -42,3 +42,8 @@ python3 -m http.server 8000
 ```
 
 Built by [Akash Vishwakarma](https://github.com/AKASH991833). Free to use — no sign-up, no card.
+
+## Stacks
+
+- **Live demo (this repo root):** HTML/CSS/JS — instant quiz generation from pasted notes, on-device.
+- **Python pipeline (`python/`):** spaCy-based generation with noun-chunk keyphrases, entity distractors and auditable source sentences. See `python/README.md`.
