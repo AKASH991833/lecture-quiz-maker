@@ -1,5 +1,8 @@
 # Python/NLP version (spaCy)
 
+> Part of **[lecture-quiz-maker](https://github.com/AKASH991833/lecture-quiz-maker)** — live browser demo: https://akash991833.github.io/lecture-quiz-maker/ · screenshots in the repo-root `screenshots/` folder.
+
+
 The Pages demo generates quizzes with regex heuristics. This pipeline uses
 spaCy (sentence segmentation, noun-chunk keyphrases, entity recognition) for
 better question and distractor selection.
